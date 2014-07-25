@@ -1,0 +1,326 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    //if IE
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Neon Admin Panel')
+    meta(name='author', content='Laborator.co')
+    title Neon | Breadcrumbs
+    link#style-resource-1(rel='stylesheet', href='/javascripts/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css')
+    link#style-resource-2(rel='stylesheet', href='/stylesheets/font-icons/entypo/css/entypo.css')
+    link#style-resource-3(rel='stylesheet', href='/stylesheets/font-icons/entypo/css/animation.css')
+    link#style-resource-4(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic')
+    link#style-resource-5(rel='stylesheet', href='/stylesheets/neon.css')
+    link#style-resource-6(rel='stylesheet', href='/stylesheets/custom.css')
+    script(src='/javascripts/jquery-1.10.2.min.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+    // TS1387507108: Neon - Responsive Admin Template created by Laborator
+  body.page-body
+    .page-container
+      .sidebar-menu
+        header.logo-env
+          // logo
+          .logo
+            a(href='../../../neon-x/dashboard/main/index.html')
+              img(src='/images/logo.png', alt='')
+          // logo collapse icon
+          .sidebar-collapse
+            a.sidebar-collapse-icon.with-animation(href='#')
+              // add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition
+              i.entypo-menu
+          // open/close menu icon (do not remove if you want to enable menu on mobile devices)
+          .sidebar-mobile-menu.visible-xs
+            a.with-animation(href='#')
+              // add class "with-animation" to support animation
+              i.entypo-menu
+        ul#main-menu
+          li#search
+            form(method='post', action='add-members')
+              input.search-input(type='text', name='q', placeholder='Search something...')
+              button(type='submit')
+                i.entypo-search
+          li
+            a(href='../../../neon-x/dashboard/main/index.html')
+              i.entypo-gauge
+              span Dashboard
+            ul
+              li
+                a(href='../../../neon-x/dashboard/main/index.html')
+                  span Dashboard 1
+              li
+                a(href='../../../neon-x/dashboard/main-2/index.html')
+                  span Dashboard 2
+      .main-content
+        .row
+          // Profile Info and Notifications
+          .col-md-6.col-sm-8.clearfix
+            ul.user-info.pull-left.pull-none-xsm
+              // Profile Info
+              li.profile-info.dropdown
+                // add class "pull-right" if you want to place this from right
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  img.img-circle(src='/images/thumb-1.png', alt='')
+                  | PonerUsuario
+                ul.dropdown-menu
+                  // Reverse Caret
+                  li.caret
+                  // Profile sub-links
+                  li
+                    a(href='#')
+                      i.entypo-user
+                      | Edit Profile
+                  li
+                    a(href='../../../neon-x/mailbox/main/index.html')
+                      i.entypo-mail
+                      | Inbox
+                  li
+                    a(href='../../../neon-x/extra/calendar/index.html')
+                      i.entypo-calendar
+                      | Calendar
+                  li
+                    a(href='#')
+                      i.entypo-clipboard
+                      | Tasks
+            ul.user-info.pull-left.pull-right-xs.pull-none-xsm
+              // Raw Notifications
+              li.notifications.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                  i.entypo-attention
+                  span.badge.badge-info 6
+                ul.dropdown-menu
+                  li.top
+                    p.small
+                      a.pull-right(href='#') Mark all Read
+                      | You have
+                      strong 3
+                      | new notifications.
+                  li
+                    ul.dropdown-menu-list.scroller
+                      li.unread.notification-success
+                        a(href='#')
+                          i.entypo-user-add.pull-right
+                          span.line
+                            strong New user registered
+                          span.line.small
+                            | 30 seconds ago
+                      li.unread.notification-secondary
+                        a(href='#')
+                          i.entypo-heart.pull-right
+                          span.line
+                            strong Someone special liked this
+                          span.line.small
+                            | 2 minutes ago
+                      li.notification-primary
+                        a(href='#')
+                          i.entypo-user.pull-right
+                          span.line
+                            strong Privacy settings have been changed
+                          span.line.small
+                            | 3 hours ago
+                      li.notification-danger
+                        a(href='#')
+                          i.entypo-cancel-circled.pull-right
+                          span.line
+                            | John cancelled the event
+                          span.line.small
+                            | 9 hours ago
+                      li.notification-info
+                        a(href='#')
+                          i.entypo-info.pull-right
+                          span.line
+                            | The server is status is stable
+                          span.line.small
+                            | yesterday at 10:30am
+                      li.notification-warning
+                        a(href='#')
+                          i.entypo-rss.pull-right
+                          span.line
+                            | New comments waiting approval
+                          span.line.small
+                            | last week
+                  li.external
+                    a(href='#') View all notifications
+              // Message Notifications
+              li.notifications.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                  i.entypo-mail
+                  span.badge.badge-secondary 10
+                ul.dropdown-menu
+                  li
+                    ul.dropdown-menu-list.scroller
+                      li.active
+                        a(href='#')
+                          span.image.pull-right
+                            img.img-circle(src='/images/thumb-1.png', alt='')
+                          span.line
+                            strong Luc Chartier
+                            | - yesterday
+                          span.line.desc.small
+                            | This ain’t our first item, it is the best of the rest.
+                      li.active
+                        a(href='#')
+                          span.image.pull-right
+                            img.img-circle(src='/images/thumb-2.png', alt='')
+                          span.line
+                            strong Salma Nyberg
+                            | - 2 days ago
+                          span.line.desc.small
+                            | Oh he decisively impression attachment friendship so if everything.
+                      li
+                        a(href='#')
+                          span.image.pull-right
+                            img.img-circle(src='/images/thumb-3.png', alt='')
+                          span.line
+                            | Hayden Cartwright - a week ago
+                          span.line.desc.small
+                            | Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+                      li
+                        a(href='#')
+                          span.image.pull-right
+                            img.img-circle(src='/images/thumb-4.png', alt='')
+                          span.line
+                            | Sandra Eberhardt - 16 days ago
+                          span.line.desc.small
+                            | On so attention necessary at by provision otherwise existence direction.
+                  li.external
+                    a(href='../../../neon-x/mailbox/main/index.html') All Messages
+              // Task Notifications
+              li.notifications.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                  i.entypo-list
+                  span.badge.badge-warning 1
+                ul.dropdown-menu
+                  li.top
+                    p
+                      | You have 6 pending tasks
+                  li
+                    ul.dropdown-menu-list.scroller
+                      li
+                        a(href='#')
+                          span.task
+                            span.desc Procurement
+                            span.percent 27%
+                          span.progress
+                            span.progress-bar.progress-bar-success(style='width: 27%;')
+                              span.sr-only 27% Complete
+                      li
+                        a(href='#')
+                          span.task
+                            span.desc App Development
+                            span.percent 83%
+                          span.progress.progress-striped
+                            span.progress-bar.progress-bar-danger(style='width: 83%;')
+                              span.sr-only 83% Complete
+                      li
+                        a(href='#')
+                          span.task
+                            span.desc HTML Slicing
+                            span.percent 91%
+                          span.progress
+                            span.progress-bar.progress-bar-success(style='width: 91%;')
+                              span.sr-only 91% Complete
+                      li
+                        a(href='#')
+                          span.task
+                            span.desc Database Repair
+                            span.percent 12%
+                          span.progress.progress-striped
+                            span.progress-bar.progress-bar-warning(style='width: 12%;')
+                              span.sr-only 12% Complete
+                      li
+                        a(href='#')
+                          span.task
+                            span.desc Backup Create Progress
+                            span.percent 54%
+                          span.progress.progress-striped
+                            span.progress-bar.progress-bar-info(style='width: 54%;')
+                              span.sr-only 54% Complete
+                      li
+                        a(href='#')
+                          span.task
+                            span.desc Upgrade Progress
+                            span.percent 17%
+                          span.progress.progress-striped
+                            span.progress-bar.progress-bar-important(style='width: 17%;')
+                              span.sr-only 17% Complete
+                  li.external
+                    a(href='#') See all tasks
+          // Raw Links
+          .col-md-6.col-sm-4.clearfix.hidden-xs
+            ul.list-inline.links-list.pull-right
+              li
+                a(href='#') Live Site
+              li.sep
+              li
+                a(href='#', data-toggle='chat', data-animate='1', data-collapse-sidebar='1')
+                  i.entypo-chat
+                  | Chat
+                  span.badge.badge-success.chat-notifications-badge.is-hidden 0
+              li.sep
+              li
+                a(href='../../../neon-x/extra/login/index.html')
+                  | Log Out
+                  i.entypo-logout.right
+        hr
+        h2 Nuevo Grupo - Torneo
+        br
+        .row
+          .col-md-12
+            .panel.panel-primary(data-collapsed='0')
+              .panel-heading
+                .panel-title
+                  | Arma tu grupo
+              .panel-body
+                form.form-horizontal.registerMails(role='form', id="registerMails", method='post', action='add-members')
+                  .inputsWrapper
+                    .form-group.formEmail
+                  .form-group
+                    .col-sm-offset-3.col-sm-5
+                      input.mailsCounter(type='text', name='mailsCounter', value=1, hidden)
+                      button.btn.btn-default(type='submit') Crear        
+        // Footer
+        footer.main
+          .pull-right
+            a(href='http://themeforest.net/item/neon-bootstrap-admin-theme/6434477', target='_blank')
+              strong Purchase this theme for $21
+          | © 2013
+          strong Neon
+          | Admin Theme by
+          a(href='http://laborator.co/', target='_blank') Laborator
+      script#script-resource-1(src='/javascripts/gsap/main-gsap.js')
+      script#script-resource-2(src='/javascripts/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js')
+      script#script-resource-3(src='/javascripts/bootstrap.min.js')
+      script#script-resource-4(src='/javascripts/joinable.js')
+      script#script-resource-5(src='/javascripts/resizeable.js')
+      script#script-resource-6(src='/javascripts/neon-api.js')
+      script#script-resource-7(src='/javascripts/neon-chat.js')
+      script#script-resource-8(src='/javascripts/neon-custom.js')
+      script#script-resource-9(src='/javascripts/neon-demo.js')
+      script#script-resource-10(src='/javascripts/jquery.validate.min.js')
+      script.          
+        $(document).ready(function () {
+          var count = 1;
+          $('<div class="form-group mail"><label class="col-sm-3 control-label"> Correo electrónico de invitado </label> <div class="col-sm-5"> <div class="input-group"> <input type="text" class="form-control mail-' + count + '" name="email" id="cemail" type="email" autofocus> <span class="input-group-btn"> <button type="button" id="addMore" class="btn btn-primary"> + </button> <button type="button" id="delete" class="btn btn-primary"> - </button> </span> </div></div>').appendTo('.formEmail');
+
+          $(".inputsWrapper").on("click", "#addMore", function()  //on add input button click
+          {
+            count++;
+            $('<div class="form-group mail"><label class="col-sm-3 control-label"> Correo electrónico de invitado </label> <div class="col-sm-5"> <div class="input-group"> <input type="text" class="form-control mail-' + count + '" name="email" id="cemail" type="email" autofocus> <span class="input-group-btn"> <button type="button" id="addMore" class="btn btn-primary"> + </button> <button type="button" id="delete" class="btn btn-primary"> - </button> </span> </div></div>').appendTo('.formEmail');
+            $('input[type=text].mailsCounter').val(count);
+          });
+
+          $(".inputsWrapper").on("click", "#delete", function(e){ //user click on remove text              
+            count--;
+            if($(".mail").length - 1 !== 0){
+              var parent_li = $(this).closest('.form-group')
+              parent_li.fadeOut('fast', function() {$(this).remove();});    
+            }
+            $('input[type=text].mailsCounter').val(count);                 
+            return false;
+          }) 
+        });

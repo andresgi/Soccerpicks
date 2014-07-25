@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Neon Admin Panel" />
+	<meta name="author" content="Laborator.co" />
+	
+	<title>Neon | Advanced Plugins</title>
+
+	<link rel="stylesheet" href="../../../neon-x/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
+	<link rel="stylesheet" href="../../../neon-x/assets/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
+	<link rel="stylesheet" href="../../../neon-x/assets/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic"  id="style-resource-4">
+	<link rel="stylesheet" href="../../../neon-x/assets/css/neon.css"  id="style-resource-5">
+	<link rel="stylesheet" href="../../../neon-x/assets/css/custom.css"  id="style-resource-6">
+
+	<script src="../../../neon-x/assets/js/jquery-1.10.2.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- TS1387507185: Neon - Responsive Admin Template created by Laborator -->
+</head>
+<body class="page-body">
+
+<div class="page-container">	
+	
+<div class="sidebar-menu">
+	
+		<header class="logo-env">
+		
+		<!-- logo -->
+		<div class="logo">
+			<a href="../../../neon-x/dashboard/main/index.html">
+				<img src="../../../neon-x/assets/images/logo.png" alt="" />
+			</a>
+		</div>
+		
+				<!-- logo collapse icon -->
+				<div class="sidebar-collapse">
+			<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+				<i class="entypo-menu"></i>
+			</a>
+		</div>
+						
+		
+		<!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+		<div class="sidebar-mobile-menu visible-xs">
+			<a href="#" class="with-animation"><!-- add class "with-animation" to support animation -->
+				<i class="entypo-menu"></i>
+			</a>
+		</div>
+		
+	</header>
+		
+	
+			<ul id="main-menu" class="">
+										<li id="search">
+					<form method="get" action="#">
+						<input type="text" name="q" class="search-input" placeholder="Search something..." />
+						<button type="submit"><i class="entypo-search"></i></button>
+					</form>
+				</li>
+					<li>
+		<a href="../../../neon-x/dashboard/main/index.html"><i class="entypo-gauge"></i><span>Dashboard</span></a>
+		
+
+		<ul>
+		<li>
+			<a href="../../../neon-x/dashboard/main/index.html"><span>Dashboard 1</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/dashboard/main-2/index.html"><span>Dashboard 2</span></a>
+		</li>
+
+		</ul>
+
+</li>
+
+	<li>
+		<a href="../../../neon-x/layouts/layout-api/index.html"><i class="entypo-layout"></i><span>Layouts</span></a>
+		
+
+		<ul>
+		<li>
+			<a href="../../../neon-x/layouts/layout-api/index.html"><span>Layout API</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/layouts/collapsed-sidebar/index.html"><span>Collapsed Sidebar</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/layouts/fixed-sidebar/index.html"><span>Fixed Sidebar</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/layouts/chat-open/index.html"><span>Chat Open</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/layouts/horizontal-menu-boxed/index.html"><span>Horizontal Menu Boxed</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/layouts/horizontal-menu-fluid/index.html"><span>Horizontal Menu Fluid</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/layouts/mixed-menus/index.html"><span>Mixed Menus</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/layouts/page-transition-fade/index.html"><span>Page Enter Transitions</span></a>
+		
+
+			<ul>
+			<li>
+				<a href="../../../neon-x/layouts/page-transition-fade/index.html"><span>Fade Scale</span></a>
+		</li>
+
+			<li>
+				<a href="../../../neon-x/layouts/page-transition-left-in/index.html"><span>Left In</span></a>
+		</li>
+
+			<li>
+				<a href="../../../neon-x/layouts/page-transition-right-in/index.html"><span>Right In</span></a>
+		</li>
+
+			<li>
+				<a href="../../../neon-x/layouts/page-transition-fade-only/index.html"><span>Fade Only</span></a>
+		</li>
+
+			</ul>
+
+</li>
+
+		</ul>
+
+</li>
+
+	<li>
+		<a href="../../../neon-x/ui/panels/index.html"><i class="entypo-newspaper"></i><span>UI Elements</span></a>
+		
+
+		<ul>
+		<li>
+			<a href="../../../neon-x/ui/panels/index.html"><span>Panels</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/tiles/index.html"><span>Tiles</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/forms/buttons/index.html"><span>Buttons</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/typography/index.html"><span>Typography</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/tabs-accordions/index.html"><span>Tabs &amp; Accordions</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/tooltips-popovers/index.html"><span>Tooltips &amp; Popovers</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/navbars/index.html"><span>Navbars</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/breadcrumbs/index.html"><span>Breadcrumbs</span></a>
+		</li>
+
+		<li>
+			<a href="../../ui/badges-label/s.html"><span>Badges &amp; Labels</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/progress-bars/index.html"><span>Progress Bars</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/modals/index.html"><span>Modals</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/blockquotes/index.html"><span>Blockquotes</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/alerts/index.html"><span>Alerts</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/pagination/index.html"><span>Pagination</span></a>
+		</li>
+
+		</ul>
+
+</li>
+
+	<li>
+		<a href="../../../neon-x/mailbox/main/index.html"><i class="entypo-mail"></i><span>Mailbox</span><span class="badge badge-secondary">8</span></a>
+		
+
+		<ul>
+		<li>
+			<a href="../../../neon-x/mailbox/main/index.html"><i class="entypo-inbox"></i><span>Inbox</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/mailbox/compose/index.html"><i class="entypo-pencil"></i><span>Compose Message</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/mailbox/message/index.html"><i class="entypo-attach"></i><span>View Message</span></a>
+		</li>
+
+		</ul>
+
+</li>
+
+	<li class="opened active">
+		<a href="../../../neon-x/forms/main/index.html"><i class="entypo-doc-text"></i><span>Forms</span></a>
+		
+
+		<ul>
+		<li>
+			<a href="../../../neon-x/forms/main/index.html"><span>Basic Elements</span></a>
+		</li>
+
+		<li class="active">
+			<a href="../../../neon-x/forms/advanced/index.html"><span>Advanced Plugins</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/forms/wizard/index.html"><span>Form Wizard</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/forms/validation/index.html"><span>Data Validation</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/forms/masks/index.html"><span>Input Masks</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/forms/sliders/index.html"><span>Sliders</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/forms/file-upload/index.html"><span>File Upload</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/forms/wysiwyg/index.html"><span>Editors</span></a>
+		</li>
+
+		</ul>
+
+</li>
+
+	<li>
+		<a href="../../../neon-x/tables/main/index.html"><i class="entypo-window"></i><span>Tables</span></a>
+		
+
+		<ul>
+		<li>
+			<a href="../../../neon-x/tables/main/index.html"><span>Basic Tables</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/tables/datatable/index.html"><span>Data Tables</span></a>
+		</li>
+
+		</ul>
+
+</li>
+
+	<li>
+		<a href="../../../neon-x/extra/icons/index.html"><i class="entypo-bag"></i><span>Extra</span><span class="badge badge-info badge-roundless">New Items</span></a>
+		
+
+		<ul>
+		<li>
+			<a href="../../../neon-x/extra/icons/index.html"><span>Icons</span><span class="badge badge-success">3</span></a>
+		
+
+			<ul>
+			<li>
+				<a href="../../../neon-x/extra/icons-fontawesome/index.html"><span>Font Awesome</span></a>
+		</li>
+
+			<li>
+				<a href="../../../neon-x/extra/icons-entypo/index.html"><span>Entypo</span></a>
+		</li>
+
+			<li>
+				<a href="../../../neon-x/extra/icons-glyphicons/index.html"><span>Glyph Icons</span></a>
+		</li>
+
+			</ul>
+
+</li>
+
+		<li>
+			<a href="../../../neon-x/extra/portlets/index.html"><span>Portlets</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/google-maps/index.html"><span>Maps</span></a>
+		
+
+			<ul>
+			<li>
+				<a href="../../../neon-x/extra/google-maps/index.html"><span>Google Maps</span></a>
+		</li>
+
+			<li>
+				<a href="../../../neon-x/extra/vector-maps/index.html"><span>Vector Maps</span></a>
+		</li>
+
+			</ul>
+
+</li>
+
+		<li>
+			<a href="../../../neon-x/extra/chat-api/index.html"><span>Chat API</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/calendar/index.html"><span>Calendar</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/lockscreen/index.html"><span>Lockscreen</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/login/index.html"><span>Login</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/invoice/index.html"><span>Invoice</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/404/index.html"><span>404 Page</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/blank-page/index.html"><span>Blank Page</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/tocify/index.html"><span>Tocify</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/ui/notifications/index.html"><span>Notifications</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/extra/scrollbox/index.html"><span>Scrollbox</span></a>
+		</li>
+
+		</ul>
+
+</li>
+
+	<li>
+		<a href="../../../neon-x/extra/charts/index.html"><i class="entypo-chart-bar"></i><span>Charts</span></a>
+		</li>
+
+	<li>
+		<a href="../../../neon-x/index.html#"><i class="entypo-flow-tree"></i><span>Menu Levels</span></a>
+		
+
+		<ul>
+		<li>
+			<a href="../../../neon-x/index.html#"><i class="entypo-flow-line"></i><span>Menu Level 1.1</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/index.html#"><i class="entypo-flow-line"></i><span>Menu Level 1.2</span></a>
+		</li>
+
+		<li>
+			<a href="../../../neon-x/index.html#"><i class="entypo-flow-line"></i><span>Menu Level 1.3</span></a>
+		
+
+			<ul>
+			<li>
+				<a href="../../../neon-x/index.html#"><i class="entypo-flow-parallel"></i><span>Menu Level 2.1</span></a>
+		</li>
+
+			<li>
+				<a href="../../../neon-x/index.html#"><i class="entypo-flow-parallel"></i><span>Menu Level 2.2</span></a>
+		
+
+				<ul>
+				<li>
+					<a href="../../../neon-x/index.html#"><i class="entypo-flow-cascade"></i><span>Menu Level 3.1</span></a>
+		
+
+					<ul>
+					<li>
+						<a href="../../../neon-x/index.html#"><i class="entypo-flow-branch"></i><span>Menu Level 4.1</span></a>
+		</li>
+
+					</ul>
+
+</li>
+
+				<li>
+					<a href="../../../neon-x/index.html#"><i class="entypo-flow-cascade"></i><span>Menu Level 3.2</span></a>
+		</li>
+
+				</ul>
+
+</li>
+
+			<li>
+				<a href="../../../neon-x/index.html#"><i class="entypo-flow-parallel"></i><span>Menu Level 2.3</span></a>
+		</li>
+
+			</ul>
+
+</li>
+
+		</ul>
+
+</li>
+
+		</ul>
+			
+		
+</div>	
+	<div class="main-content">
+		
+<div class="row">
+	
+	<!-- Profile Info and Notifications -->
+	<div class="col-md-6 col-sm-8 clearfix">
+		
+		<ul class="user-info pull-left pull-none-xsm">
+		
+			<!-- Profile Info -->
+			<li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
+				
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<img src="../../../neon-x/assets/images/thumb-1.png" alt="" class="img-circle" />
+					Art Ramadani
+				</a>
+				
+				<ul class="dropdown-menu">
+					
+					<!-- Reverse Caret -->
+					<li class="caret"></li>
+					
+					<!-- Profile sub-links -->
+					<li>
+						<a href="#">
+							<i class="entypo-user"></i>
+							Edit Profile
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../../neon-x/mailbox/main/index.html">
+							<i class="entypo-mail"></i>
+							Inbox
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../../neon-x/extra/calendar/index.html">
+							<i class="entypo-calendar"></i>
+							Calendar
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<i class="entypo-clipboard"></i>
+							Tasks
+						</a>
+					</li>
+				</ul>
+			</li>
+		
+		</ul>
+		
+		<ul class="user-info pull-left pull-right-xs pull-none-xsm">
+			
+			<!-- Raw Notifications -->
+			<li class="notifications dropdown">
+				
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<i class="entypo-attention"></i>
+					<span class="badge badge-info">6</span>
+				</a>
+				
+				<ul class="dropdown-menu">
+					<li class="top">
+	<p class="small">
+		<a href="#" class="pull-right">Mark all Read</a>
+		You have <strong>3</strong> new notifications.
+	</p>
+</li>
+
+<li>
+	<ul class="dropdown-menu-list scroller">
+		<li class="unread notification-success">
+			<a href="#">
+				<i class="entypo-user-add pull-right"></i>
+				
+				<span class="line">
+					<strong>New user registered</strong>
+				</span>
+				
+				<span class="line small">
+					30 seconds ago
+				</span>
+			</a>
+		</li>
+		
+		<li class="unread notification-secondary">
+			<a href="#">
+				<i class="entypo-heart pull-right"></i>
+				
+				<span class="line">
+					<strong>Someone special liked this</strong>
+				</span>
+				
+				<span class="line small">
+					2 minutes ago
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-primary">
+			<a href="#">
+				<i class="entypo-user pull-right"></i>
+				
+				<span class="line">
+					<strong>Privacy settings have been changed</strong>
+				</span>
+				
+				<span class="line small">
+					3 hours ago
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-danger">
+			<a href="#">
+				<i class="entypo-cancel-circled pull-right"></i>
+				
+				<span class="line">
+					John cancelled the event
+				</span>
+				
+				<span class="line small">
+					9 hours ago
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-info">
+			<a href="#">
+				<i class="entypo-info pull-right"></i>
+				
+				<span class="line">
+					The server is status is stable
+				</span>
+				
+				<span class="line small">
+					yesterday at 10:30am
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-warning">
+			<a href="#">
+				<i class="entypo-rss pull-right"></i>
+				
+				<span class="line">
+					New comments waiting approval
+				</span>
+				
+				<span class="line small">
+					last week
+				</span>
+			</a>
+		</li>
+	</ul>
+</li>
+
+<li class="external">
+	<a href="#">View all notifications</a>
+</li>				</ul>
+				
+			</li>
+			
+			<!-- Message Notifications -->
+			<li class="notifications dropdown">
+				
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<i class="entypo-mail"></i>
+					<span class="badge badge-secondary">10</span>
+				</a>
+				
+				<ul class="dropdown-menu">
+					<li>
+	<ul class="dropdown-menu-list scroller">
+		<li class="active">
+			<a href="#">
+				<span class="image pull-right">
+					<img src="../../../neon-x/assets/images/thumb-1.png" alt="" class="img-circle" />
+				</span>
+				
+				<span class="line">
+					<strong>Luc Chartier</strong>
+					- yesterday
+				</span>
+				
+				<span class="line desc small">
+					This ain’t our first item, it is the best of the rest.
+				</span>
+			</a>
+		</li>
+		
+		<li class="active">
+			<a href="#">
+				<span class="image pull-right">
+					<img src="../../../neon-x/assets/images/thumb-2.png" alt="" class="img-circle" />
+				</span>
+				
+				<span class="line">
+					<strong>Salma Nyberg</strong>
+					- 2 days ago
+				</span>
+				
+				<span class="line desc small">
+					Oh he decisively impression attachment friendship so if everything. 
+				</span>
+			</a>
+		</li>
+		
+		<li>
+			<a href="#">
+				<span class="image pull-right">
+					<img src="../../../neon-x/assets/images/thumb-3.png" alt="" class="img-circle" />
+				</span>
+				
+				<span class="line">
+					Hayden Cartwright
+					- a week ago
+				</span>
+				
+				<span class="line desc small">
+					Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+				</span>
+			</a>
+		</li>
+		
+		<li>
+			<a href="#">
+				<span class="image pull-right">
+					<img src="../../../neon-x/assets/images/thumb-4.png" alt="" class="img-circle" />
+				</span>
+				
+				<span class="line">
+					Sandra Eberhardt
+					- 16 days ago
+				</span>
+				
+				<span class="line desc small">
+					On so attention necessary at by provision otherwise existence direction.
+				</span>
+			</a>
+		</li>
+	</ul>
+</li>
+
+<li class="external">
+	<a href="../../../neon-x/mailbox/main/index.html">All Messages</a>
+</li>				</ul>
+				
+			</li>
+			
+			<!-- Task Notifications -->
+			<li class="notifications dropdown">
+				
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<i class="entypo-list"></i>
+					<span class="badge badge-warning">1</span>
+				</a>
+				
+				<ul class="dropdown-menu">
+					<li class="top">
+	<p>You have 6 pending tasks</p>
+</li>
+
+<li>
+	<ul class="dropdown-menu-list scroller">
+		<li>
+			<a href="#">
+				<span class="task">
+					<span class="desc">Procurement</span>
+					<span class="percent">27%</span>
+				</span>
+			
+				<span class="progress">
+					<span style="width: 27%;" class="progress-bar progress-bar-success">
+						<span class="sr-only">27% Complete</span>
+					</span>
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="task">
+					<span class="desc">App Development</span>
+					<span class="percent">83%</span>
+				</span>
+				
+				<span class="progress progress-striped">
+					<span style="width: 83%;" class="progress-bar progress-bar-danger">
+						<span class="sr-only">83% Complete</span>
+					</span>
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="task">
+					<span class="desc">HTML Slicing</span>
+					<span class="percent">91%</span>
+				</span>
+				
+				<span class="progress">
+					<span style="width: 91%;" class="progress-bar progress-bar-success">
+						<span class="sr-only">91% Complete</span>
+					</span>
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="task">
+					<span class="desc">Database Repair</span>
+					<span class="percent">12%</span>
+				</span>
+				
+				<span class="progress progress-striped">
+					<span style="width: 12%;" class="progress-bar progress-bar-warning">
+						<span class="sr-only">12% Complete</span>
+					</span>
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="task">
+					<span class="desc">Backup Create Progress</span>
+					<span class="percent">54%</span>
+				</span>
+				
+				<span class="progress progress-striped">
+					<span style="width: 54%;" class="progress-bar progress-bar-info">
+						<span class="sr-only">54% Complete</span>
+					</span>
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="task">
+					<span class="desc">Upgrade Progress</span>
+					<span class="percent">17%</span>
+				</span>
+				
+				<span class="progress progress-striped">
+					<span style="width: 17%;" class="progress-bar progress-bar-important">
+						<span class="sr-only">17% Complete</span>
+					</span>
+				</span>
+			</a>
+		</li>
+	</ul>
+</li>
+
+<li class="external">
+	<a href="#">See all tasks</a>
+</li>				</ul>
+				
+			</li>
+		
+		</ul>
+	
+	</div>
+	
+	
+	<!-- Raw Links -->
+	<div class="col-md-6 col-sm-4 clearfix hidden-xs">
+		
+		<ul class="list-inline links-list pull-right">
+			<li>
+				<a href="#">Live Site</a>
+			</li>
+			
+			<li class="sep"></li>
+			
+			<li>
+				<a href="#" data-toggle="chat" data-animate="1" data-collapse-sidebar="1">
+					<i class="entypo-chat"></i>
+					Chat
+					
+					<span class="badge badge-success chat-notifications-badge is-hidden">0</span>
+				</a>
+			</li>
+			
+			<li class="sep"></li>
+			
+			<li>
+				<a href="../../../neon-x/extra/login/index.html">
+					Log Out <i class="entypo-logout right"></i>
+				</a>
+			</li>
+		</ul>
+		
+	</div>
+	
+</div>
+
+<hr />
+			<ol class="breadcrumb bc-3">
+						<li>
+				<a href="../../../neon-x/dashboard/main/index.html"><i class="entypo-home"></i>Home</a>
+			</li>
+					<li>
+			
+							<a href="../../../neon-x/forms/main/index.html">Forms</a>
+					</li>
+				<li class="active">
+			
+							<strong>Advanced Plugins</strong>
+					</li>
+					</ol>
+			
+<h2>Advanced Form Elements</h2>
+<br />
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="panel panel-primary" data-collapsed="0">
+		
+			<div class="panel-heading">
+				<div class="panel-title">
+					Multi Select Box
+				</div>
+				
+				<div class="panel-options">
+					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+				
+				<form role="form" class="form-horizontal form-groups-bordered">
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Multi-Select List</label>
+						
+						<div class="col-sm-7">
+							<select multiple="multiple" name="my-select[]" class="form-control multi-select">
+								<option value="elem_1">elem 1</option>
+								<option value="elem_2">elem 2</option>
+								<option value="elem_3">elem 3</option>
+								<option value="elem_4">elem 4</option>
+								<option value="elem_5">elem 5</option>
+								<option value="elem_6">elem 6</option>
+								<option value="elem_7">elem 7</option>
+								<option value="elem_8" selected>Selected element</option>
+								<option value="elem_9" selected>Selected element 2</option>
+							</select>
+						</div>
+					</div>
+					
+				</form>
+			
+			</div>
+		
+		</div>
+		
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="panel panel-primary" data-collapsed="0">
+		
+			<div class="panel-heading">
+				<div class="panel-title">
+					Date Range Picker
+				</div>
+				
+				<div class="panel-options">
+					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+			
+				<form role="form" class="form-horizontal form-groups-bordered">
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Range Picker</label>
+						
+						<div class="col-sm-5">
+							
+							<input type="text" class="form-control daterange" />
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Selected Date Range</label>
+						
+						<div class="col-sm-5">
+							
+							<input type="text" class="form-control daterange" data-format="YYYY-MM-DD" data-start-date="2013-08-02" data-end-date="2013-08-15" data-separator="," />
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Disabled Date Range</label>
+						
+						<div class="col-sm-5">
+							
+							<input type="text" class="form-control daterange" data-min-date="12-14-2013" data-max-date="12-26-2013" />
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Range Callback</label>
+						
+						<div class="col-sm-5">
+							
+							<input type="text" class="form-control daterange" data-callback />
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Range with Timepicker</label>
+						
+						<div class="col-sm-5">
+							
+							<input type="text" class="form-control daterange" data-time-picker="true" data-time-picker-increment="5" data-format="MM/DD/YYYY h:mm A" />
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Range Inline</label>
+						
+						<div class="col-sm-5">
+							
+														<div class="daterange daterange-inline" data-format="MMMM D, YYYY" data-start-date="December 6, 2013" data-end-date="December 20, 2013">
+								<i class="entypo-calendar"></i>
+								<span>December 6, 2013 - December 20, 2013</span>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Range w/ Predefined Ranges</label>
+						
+						<div class="col-sm-5">
+							
+														<div class="daterange daterange-inline add-ranges" data-format="MMMM D, YYYY" data-start-date="December 13, 2013" data-end-date="January 4, 2014">
+								<i class="entypo-calendar"></i>
+								<span>December 13, 2013 - January 4, 2014</span>
+							</div>
+							
+						</div>
+					</div>
+					
+				</form>
+			
+			</div>
+			
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="panel panel-primary" data-collapsed="0">
+		
+			<div class="panel-heading">
+				<div class="panel-title">
+					Date Picker
+				</div>
+				
+				<div class="panel-options">
+					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+			
+				<form role="form" class="form-horizontal form-groups-bordered">
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Picker (inline)</label>
+						
+						<div class="col-sm-5">
+							
+							<div class="datepicker"></div><!-- add class "no-border" to remove the outline it -->
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Picker (popup)</label>
+						
+						<div class="col-sm-3">
+							<div class="input-group">
+								<input type="text" class="form-control datepicker" data-format="D, dd MM yyyy">
+								
+								<div class="input-group-addon">
+									<a href="#"><i class="entypo-calendar"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Picker (start/end date)</label>
+						
+						<div class="col-sm-3">
+							<input type="text" class="form-control datepicker" data-start-date="-2d" data-end-date="+1w">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Date Picker (disabled days Mo, We)</label>
+						
+						<div class="col-sm-3">
+							<input type="text" class="form-control datepicker" data-disabled-days="1,3">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">2 Clicks Date Select</label>
+						
+						<div class="col-sm-3">
+							<input type="text" class="form-control datepicker" data-start-view="1">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">3 Clicks Date Select</label>
+						
+						<div class="col-sm-3">
+							<input type="text" class="form-control datepicker" data-start-view="2">
+						</div>
+					</div>
+					
+				</form>
+				
+			</div>
+			
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="panel panel-primary" data-collapsed="0">
+		
+			<div class="panel-heading">
+				<div class="panel-title">
+					Time Picker
+				</div>
+				
+				<div class="panel-options">
+					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+				
+				<form role="form" class="form-horizontal form-groups-bordered">
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Time Picker (Simple)</label>
+						
+						<div class="col-sm-2">
+							<div class="input-group minimal">
+								<div class="input-group-addon">
+									<i class="entypo-clock"></i>
+								</div>
+								<input type="text" class="form-control timepicker" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Time Picker (Dropdown)</label>
+						
+						<div class="col-sm-3">
+							<input type="text" class="form-control timepicker" data-template="dropdown" data-show-seconds="true" data-default-time="11:25 AM" data-show-meridian="true" data-minute-step="5" />
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Time Picker (input-group)</label>
+						
+						<div class="col-sm-2">
+							<div class="input-group">
+								<input type="text" class="form-control timepicker" data-template="dropdown" data-show-seconds="true" data-default-time="11:25 AM" data-show-meridian="true" data-minute-step="5" data-second-step="5" />
+								
+								<div class="input-group-addon">
+									<a href="#"><i class="entypo-clock"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Time &amp; Date Picker</label>
+						
+						<div class="col-sm-3">
+							
+							<div class="date-and-time">
+								<input type="text" class="form-control datepicker" data-format="D, dd MM yyyy">
+								<input type="text" class="form-control timepicker" data-template="dropdown" data-show-seconds="true" data-default-time="11:25 AM" data-show-meridian="true" data-minute-step="5" data-second-step="5" />
+							</div>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+			
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="panel panel-primary" data-collapsed="0">
+		
+			<div class="panel-heading">
+				<div class="panel-title">
+					Color Picker
+				</div>
+				
+				<div class="panel-options">
+					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+				
+				<form role="form" class="form-horizontal form-groups-bordered">
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Color Picker (Simple)</label>
+						
+						<div class="col-sm-3">
+							<input type="text" class="form-control colorpicker" />
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Color Picker (RGBA)</label>
+						
+						<div class="col-sm-3">
+							<input type="text" class="form-control colorpicker" data-format="rgba" />
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Color Picker (Horizontal)</label>
+						
+						<div class="col-sm-3">
+							<input type="text" class="form-control colorpicker" data-horizontal="true" />
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Color Picker Droplet</label>
+						
+						<div class="col-sm-2">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<a href="#"><i class="entypo-droplet"></i></a>
+								</div>
+								
+								<input type="text" class="form-control colorpicker" data-format="hex" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Color Picker Color Preview</label>
+						
+						<div class="col-sm-2">
+							<div class="input-group">
+								<input type="text" class="form-control colorpicker" data-format="hex" value="#5a3d3d" />
+								
+								<div class="input-group-addon">
+									<i class="color-preview"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</form>
+				
+			</div>
+			
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="panel panel-primary" data-collapsed="0">
+		
+			<div class="panel-heading">
+				<div class="panel-title">
+					Selectbox Replacement
+				</div>
+				
+				<div class="panel-options">
+					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+				
+				<form role="form" class="form-horizontal form-groups-bordered">
+					
+					<strong>Select2 Plugin</strong>
+					<br />
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Select2</label>
+						
+						<div class="col-sm-5">
+							
+							<select name="test" class="select2" data-allow-clear="true" data-placeholder="Select one city...">
+								<option></option>
+								<optgroup label="United States">
+									<option value="1">Alabama</option>
+									<option value="2">Boston</option>
+									<option value="3">Ohaio</option>
+									<option value="4">New York</option>
+									<option value="5">Washington</option>
+								</optgroup>
+							</select>
+							
+						</div>
+					</div>
+				
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Select2 Multiple</label>
+						
+						<div class="col-sm-5">
+							
+							<select name="test" class="select2" multiple>
+								<option value="3" >Ohaio</option>
+								<option value="2" >Boston</option>
+								<option value="5" >Washington</option>
+								<option value="1" >Alabama</option>
+								<option value="4" >New York</option>
+								<option value="12" >Bostons</option>
+								<option value="11" >Alabama</option>
+								<option value="13" >Ohaio</option>
+								<option value="14" >New York</option>
+								<option value="15" >Washington II</option>
+							</select>
+							
+						</div>
+					</div>
+					
+				</form>
+				
+			</div>
+			
+			<div class="panel-body">	
+			
+				<form role="form" class="form-horizontal form-groups-bordered">	
+					
+					<strong>SelectBoxIt Plugin</strong>
+					<br />
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">SelectBoxIt</label>
+						
+						<div class="col-sm-5">
+							
+							<select name="test" class="selectboxit">
+								<optgroup label="United States">
+									<option value="1">Alabama</option>
+									<option value="2">Boston</option>
+									<option value="3">Ohaio</option>
+									<option value="4">New York</option>
+									<option value="5">Washington</option>
+								</optgroup>
+							</select>
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">SelectBoxIt (No first-option)</label>
+						
+						<div class="col-sm-5">
+							
+							<select name="test" class="selectboxit" data-first-option="false">
+								<option>Select city</option>
+								<option value="1">Alabama</option>
+								<option value="2">Boston</option>
+								<option value="3">Ohaio</option>
+								<option value="4">New York</option>
+								<option value="5">Washington</option>
+							</select>
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">SelectBoxIt (native)</label>
+						
+						<div class="col-sm-5">
+							
+							<select name="test" class="selectboxit" data-native="true" data-text="Select city (+attribute placeholder)">
+								<option value="1">Alabama</option>
+								<option value="2">Boston</option>
+								<option value="3">Ohaio</option>
+								<option value="4">New York</option>
+								<option value="5">Washington</option>
+							</select>
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">SelectBoxIt (Icons)</label>
+						
+						<div class="col-sm-5">
+							
+							<select name="test" class="selectboxit">
+								<option value="SelectBoxIt themes:" data-iconurl="../../../../icons.iconarchive.com/icons/custom-icon-design/pretty-office-5/256/themes-icon.png">SelectBoxIt themes:</option>
+								<option value="Twitter Bootstrap" data-iconurl="../../../../blog.getbootstrap.com/public/ico/apple-touch-icon-144-precomposed.html">Twitter Bootstrap</option>
+								<option value="jQuery UI" data-iconurl="../../../../c747925.r25.cf2.rackcdn.com/blog/wp-content/uploads/2010/09/jquery-ui-logo.png">jQuery UI</option>
+								<option value="jQuery Mobile" data-iconurl="../../../../twimg0-a.akamaihd.net/profile_images/2633978789/80508321d8ce3ba8aa264380bb7eba33.png">jQuery Mobile</option>
+							</select>
+							
+						</div>
+					</div>
+				
+				</form>	
+				
+			</div>
+			
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="panel panel-primary" data-collapsed="0">
+		
+			<div class="panel-heading">
+				<div class="panel-title">
+					Tags Input
+				</div>
+				
+				<div class="panel-options">
+					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+			
+				<form role="form" class="form-horizontal form-groups-bordered">
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Tags Input</label>
+						
+						<div class="col-sm-5">
+							
+							<input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" class="form-control tagsinput" />
+							
+						</div>
+					</div>
+				
+				</form>
+			
+			</div>
+			
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="panel panel-primary" data-collapsed="0">
+		
+			<div class="panel-heading">
+				<div class="panel-title">
+					Typeahead Auto Complete
+				</div>
+				
+				<div class="panel-options">
+					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+				
+				<form role="form" class="form-horizontal form-groups-bordered">
+				
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Autosuggest (Local)</label>
+						
+						<div class="col-sm-5">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="entypo-user"></i></span>
+								<input type="text" name="typeahead_local" class="form-control typeahead" data-local="arlind,art,laborator,simon,dean,frank,quintin,walker,emily,jonnatan,huston,miley,kate,lisa,tim" />
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Autosuggest (Pre-fetched)</label>
+						
+						<div class="col-sm-5">
+							<div class="input-group">
+								<input type="text" name="typeahead_prefetch" class="form-control typeahead" data-prefetch="http://themes.laborator.co/neon-x/data/countries.json" placeholder="Countries" />
+								<span class="input-group-addon"><i class="entypo-globe"></i></span>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Autosuggest (Remote-Query)</label>
+						
+						<div class="col-sm-5">
+							<input type="text" name="typeahead_remote" class="form-control typeahead" data-remote="http://themes.laborator.co/neon-x/data/autosuggest-remote.php?q=%QUERY" placeholder="Randomized Output" />
+						</div>
+					</div>
+					
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Autosuggest (Custom Structure)</label>
+						
+						<div class="col-sm-5">
+							<input type="text" name="typeahead_custom" class="form-control typeahead" data-remote="http://themes.laborator.co/neon-x/data/autosuggest-custom.php?q=%QUERY" data-template="<div class='thumb-entry'><span class='image'><img src='%7b%7bimg%7d%7d' width=40 height=40 /></span><span class='text'><strong>{{value}}</strong><em>{{desc}}</em></span></div>" placeholder="Thumbnails Included" />
+						</div>
+					</div>
+					
+				</form>
+				
+			</div>
+			
+		</div>
+	
+	</div>
+</div><!-- Footer -->
+<footer class="main">
+	
+		<div class="pull-right">
+		<a href="http://themeforest.net/item/neon-bootstrap-admin-theme/6434477" target="_blank"><strong>Purchase this theme for $21</strong></a>
+	</div>
+		
+	&copy; 2013 <strong>Neon</strong> Admin Theme by <a href="http://laborator.co/" target="_blank">Laborator</a>
+	
+</footer>	</div>
+	
+	
+<div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25">
+	
+	<div class="chat-inner">
+	
+		
+		<h2 class="chat-header">
+			<a href="#" class="chat-close" data-animate="1"><i class="entypo-cancel"></i></a>
+			
+			<i class="entypo-users"></i>
+			Chat
+			<span class="badge badge-success is-hidden">0</span>
+		</h2>
+		
+		
+		<div class="chat-group" id="group-1">
+			<strong>Favorites</strong>
+			
+			<a href="#" id="sample-user-123" data-conversation-history="#sample_history"><span class="user-status is-online"></span> <em>Catherine J. Watkins</em></a>
+			<a href="#"><span class="user-status is-online"></span> <em>Nicholas R. Walker</em></a>
+			<a href="#"><span class="user-status is-busy"></span> <em>Susan J. Best</em></a>
+			<a href="#"><span class="user-status is-offline"></span> <em>Brandon S. Young</em></a>
+			<a href="#"><span class="user-status is-idle"></span> <em>Fernando G. Olson</em></a>
+		</div>
+		
+		
+		<div class="chat-group" id="group-2">
+			<strong>Work</strong>
+			
+			<a href="#"><span class="user-status is-offline"></span> <em>Robert J. Garcia</em></a>
+			<a href="#" data-conversation-history="#sample_history_2"><span class="user-status is-offline"></span> <em>Daniel A. Pena</em></a>
+			<a href="#"><span class="user-status is-busy"></span> <em>Rodrigo E. Lozano</em></a>
+		</div>
+		
+		
+		<div class="chat-group" id="group-3">
+			<strong>Social</strong>
+			
+			<a href="#"><span class="user-status is-busy"></span> <em>Velma G. Pearson</em></a>
+			<a href="#"><span class="user-status is-offline"></span> <em>Margaret R. Dedmon</em></a>
+			<a href="#"><span class="user-status is-online"></span> <em>Kathleen M. Canales</em></a>
+			<a href="#"><span class="user-status is-offline"></span> <em>Tracy J. Rodriguez</em></a>
+		</div>
+	
+	</div>
+	
+	<!-- conversation template -->
+	<div class="chat-conversation">
+		
+		<div class="conversation-header">
+			<a href="#" class="conversation-close"><i class="entypo-cancel"></i></a>
+			
+			<span class="user-status"></span>
+			<span class="display-name"></span> 
+			<small></small>
+		</div>
+		
+		<ul class="conversation-body">	
+		</ul>
+		
+		<div class="chat-textarea">
+			<textarea class="form-control autogrow" placeholder="Type your message"></textarea>
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<!-- Chat Histories -->
+<ul class="chat-history" id="sample_history">
+	<li>
+		<span class="user">Art Ramadani</span>
+		<p>Are you here?</p>
+		<span class="time">09:00</span>
+	</li>
+	
+	<li class="opponent">
+		<span class="user">Catherine J. Watkins</span>
+		<p>This message is pre-queued.</p>
+		<span class="time">09:25</span>
+	</li>
+	
+	<li class="opponent">
+		<span class="user">Catherine J. Watkins</span>
+		<p>Whohoo!</p>
+		<span class="time">09:26</span>
+	</li>
+	
+	<li class="opponent unread">
+		<span class="user">Catherine J. Watkins</span>
+		<p>Do you like it?</p>
+		<span class="time">09:27</span>
+	</li>
+</ul>
+
+
+
+
+<!-- Chat Histories -->
+<ul class="chat-history" id="sample_history_2">
+	<li class="opponent unread">
+		<span class="user">Daniel A. Pena</span>
+		<p>I am going out.</p>
+		<span class="time">08:21</span>
+	</li>
+	
+	<li class="opponent unread">
+		<span class="user">Daniel A. Pena</span>
+		<p>Call me when you see this message.</p>
+		<span class="time">08:27</span>
+	</li>
+</ul></div>
+
+
+
+	<link rel="stylesheet" href="../../../neon-x/assets/js/select2/select2-bootstrap.css"  id="style-resource-1">
+	<link rel="stylesheet" href="../../../neon-x/assets/js/select2/select2.css"  id="style-resource-2">
+	<link rel="stylesheet" href="../../../neon-x/assets/js/selectboxit/jquery.selectBoxIt.css"  id="style-resource-3">
+	<link rel="stylesheet" href="../../../neon-x/assets/js/daterangepicker/daterangepicker-bs3.css"  id="style-resource-4">
+
+	<script src="../../../neon-x/assets/js/gsap/main-gsap.js" id="script-resource-1"></script>
+	<script src="../../../neon-x/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script>
+	<script src="../../../neon-x/assets/js/bootstrap.min.js" id="script-resource-3"></script>
+	<script src="../../../neon-x/assets/js/joinable.js" id="script-resource-4"></script>
+	<script src="../../../neon-x/assets/js/resizeable.js" id="script-resource-5"></script>
+	<script src="../../../neon-x/assets/js/neon-api.js" id="script-resource-6"></script>
+	<script src="../../../neon-x/assets/js/select2/select2.min.js" id="script-resource-7"></script>
+	<script src="../../../neon-x/assets/js/bootstrap-tagsinput.min.js" id="script-resource-8"></script>
+	<script src="../../../neon-x/assets/js/typeahead.min.js" id="script-resource-9"></script>
+	<script src="../../../neon-x/assets/js/selectboxit/jquery.selectBoxIt.min.js" id="script-resource-10"></script>
+	<script src="../../../neon-x/assets/js/bootstrap-datepicker.js" id="script-resource-11"></script>
+	<script src="../../../neon-x/assets/js/bootstrap-timepicker.min.js" id="script-resource-12"></script>
+	<script src="../../../neon-x/assets/js/bootstrap-colorpicker.min.js" id="script-resource-13"></script>
+	<script src="../../../neon-x/assets/js/daterangepicker/moment.min.js" id="script-resource-14"></script>
+	<script src="../../../neon-x/assets/js/daterangepicker/daterangepicker.js" id="script-resource-15"></script>
+	<script src="../../../neon-x/assets/js/jquery.multi-select.js" id="script-resource-16"></script>
+	<script src="../../../neon-x/assets/js/neon-chat.js" id="script-resource-17"></script>
+	<script src="../../../neon-x/assets/js/neon-custom.js" id="script-resource-18"></script>
+	<script src="../../../neon-x/assets/js/neon-demo.js" id="script-resource-19"></script>
+	<script type="text/javascript">
+		
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-28991003-3']);
+		_gaq.push(['_setDomainName', 'laborator.co']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+		
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		
+	</script>
+	
+</body>
+</html>
